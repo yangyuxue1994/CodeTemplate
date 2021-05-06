@@ -1,0 +1,30 @@
+---
+title: "template"
+author: "Cher"
+date: "5/5/2021"
+output:
+  html_document:
+    code_folding: hide
+    theme: yeti
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+  word_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE, warning = FALSE, error = FALSE, message = FALSE)
+.libPaths(c(.libPaths(), "/home/stocco/R/x86_64-pc-linux-gnu-library/3.6"))
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+library(xtable)
+library(lme4)
+rm(list=ls())
+```
